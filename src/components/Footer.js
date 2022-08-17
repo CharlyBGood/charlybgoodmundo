@@ -5,27 +5,27 @@ function Footer() {
   return (
     <footer className="smedia">
       <a href="https://bit.ly/BGoodYouTube" target="_blank" rel="noreferrer">
-        youtube
+        y
       </a>
       <a href="https://github.com/CharlyBGood" target="_blank" rel="noreferrer">
-        github
+        g
       </a>
       <a href="https://vimeo.com/charlybgood" target="_blank" rel="noreferrer">
-        vimeo
+        v
       </a>
       <a
         href="https://www.instagram.com/charlsbgood/"
         target="_blank"
         rel="noreferrer"
       >
-        instagram
+        i
       </a>
       <a
         href="https://twitter.com/CharlybGoodM"
         target="_blank"
         rel="noreferrer"
       >
-        twitter
+        t
       </a>
     </footer>
   );

@@ -1,0 +1,53 @@
+.main-form {
+  display: flex;
+  width: 100%;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0.9;
+  border-radius: 1em;
+  padding: 1em;
+  color: var(--col-whr);
+  font-size: 1em;
+}
+
+form input,
+textarea {
+  background-color: var(--col-rd);
+  color: var(--col-whp);
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 50%;
+  height: auto;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.form-container input[type="submit"] {
+  color: var(--col-whr);
+  height: 3em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  form input,
+  textarea {
+    width: 100%;
+  }
+}
