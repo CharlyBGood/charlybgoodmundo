@@ -1,12 +1,9 @@
 import "../stylesheets/Music.css";
 import GifImg from "../img/playrec.gif";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 function Music() {
   return (
-    <main class="video_gallery">
-      <Navbar />
+    <main className="video_gallery">
       <div id="Songs" className="music-container">
         <img className="gif" src={GifImg} alt="charlybgood gif" />
         <div className="links">
@@ -26,7 +23,6 @@ function Music() {
           </a>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
