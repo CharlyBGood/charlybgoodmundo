@@ -1,24 +1,15 @@
-import React from "react";
 import ImgCenter from "../img/planetavacio.png";
-import "../stylesheets/Content.css"
+import "../stylesheets/Content.css";
 
 function Content() {
   return (
     <div className="img_container">
       <div className="decoration_words">
-        <a className="item_1" href="./pages/music.html">
+        <a className="item_1" href="./Music">
           #&#119070;music
         </a>
-        <a className="item_2" href="./pages/collages.html">
-          #artGallery
-        </a>
-        <a
-          className="item_3"
-          href="https://opensea.io/charly_bgood"
-          target="_BLANK"
-          rel="noreferrer"
-        >
-          #nft
+        <a className="item_2" href="/VisualArt">
+          #vi$ual_Art
         </a>
       </div>
       <a href="/">
@@ -31,16 +22,16 @@ function Content() {
       </a>
       <div className="decoration_words">
         <a className="item_1" href="./pages/developer.html">
-          #devPortfolio
+          #dev_Portfolio
         </a>
         <a
           className="item_2"
-          href="https://no-state-node.herokuapp.com/"
+          href="https://opensea.io/charly_bgood"
           target="_BLANK"
           rel="noreferrer"
         >
-          #R3CuRSoS
-        </a>        
+          #nft
+        </a>
       </div>
     </div>
   );

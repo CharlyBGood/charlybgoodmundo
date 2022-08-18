@@ -4,7 +4,8 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-
+import Music from "./components/Music";
+import VisualArt from "./components/VisualArt";
 
 function App() {
   return (
@@ -15,14 +16,15 @@ function App() {
             path="/"
             element={
               <>
-                <Navbar 
-                />
+                <Navbar />
                 <Content />
                 <Footer />
               </>
             }
           />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Music" element={<Music />} />
+          <Route path="/VisualArt" element={<VisualArt />} />
         </Routes>
       </BrowserRouter>
     </div>
