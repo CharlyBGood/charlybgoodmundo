@@ -6,12 +6,12 @@ function Content() {
   return (
     <div className="img_container">
       <div className="decoration_words">
-        <NavLink className="item_1" to="./Music">
+        <NavLink className="item item_1" to="./Music">
           #&#119070;music
         </NavLink>
-        <NavLink className="item_2" to="/VisualArt">
+        <NavLink className="item item_2" to="/VisualArt">
           #vi$ual_Art
-        </NavLink >
+        </NavLink>
       </div>
       <NavLink to="/">
         <img
@@ -22,17 +22,17 @@ function Content() {
         />
       </NavLink>
       <div className="decoration_words">
-        <NavLink className="item_1" to="./pages/developer.html">
+        <NavLink className="item item_1" to="/DevPortfolio">
           #dev_Portfolio
         </NavLink>
-        <NavLink
-          className="item_2"
-          to="https://opensea.io/charly_bgood"
+        <a
+          className="item item_2"
+          href="https://opensea.io/charly_bgood"
           target="_BLANK"
           rel="noreferrer"
         >
           #nft
-        </NavLink>
+        </a>
       </div>
     </div>
   );
