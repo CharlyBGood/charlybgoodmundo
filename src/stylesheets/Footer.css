@@ -27,3 +27,13 @@ footer {
   text-decoration: none;
   color: var(--col-whp);
 }
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: .6em .2em;
+  }
+
+  .smedia a {
+    padding: 0 .5em;
+  }
+}
