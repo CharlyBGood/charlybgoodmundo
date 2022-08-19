@@ -2,14 +2,14 @@ import "../stylesheets/DevPortfolio.css";
 
 function DevPortfolio() {
   return (
-    <main class="projects-container">
-      <div class="card-container">
-        <div class="card card-1">
+    <main className="projects-container">
+      <div className="card-container">
+        <div className="card card-1">
           <a href="/" rel="noreferrer" target="_blank">
             Some personal projects
           </a>
         </div>
-        <div class="card card-2">
+        <div className="card card-2">
           <a
             href="https://estarsiempreseguros.com.ar/"
             rel="noreferrer"
@@ -18,17 +18,17 @@ function DevPortfolio() {
             Client WebSite
           </a>
         </div>
-        <div class="card card-3">
+        <div className="card card-3">
           <a href="/" rel="noreferrer" target="_blank">
             Web Apps
           </a>
         </div>
-        <div class="card card-4">
+        <div className="card card-4">
           <a href="/" rel="noreferrer" target="_blank">
             Single Pages
           </a>
         </div>
-        <div class="card card-5">
+        <div className="card card-5">
           <a
             href="https://charlybgood.github.io/freecodecamp/"
             rel="noreferrer"
