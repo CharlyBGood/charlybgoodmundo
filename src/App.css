@@ -20,7 +20,7 @@ body {
   font-size: var(--fs-400);
   font-family: "Nanum Gothic", sans-serif;
   color: var(--col-whr);
-  background-color: #000;
+  background-color: #0c0c0c;
   margin: 0;
   padding: 0;
   max-width: 100%;

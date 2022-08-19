@@ -29,7 +29,7 @@ function Content() {
           className="item item_2"
           href="https://opensea.io/charly_bgood"
           target="_BLANK"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           #nft
         </a>

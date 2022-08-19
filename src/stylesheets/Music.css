@@ -27,7 +27,7 @@
   -ms-flex-align: center;
   align-items: center;
   margin: 7em auto;
-  gap: 3em;
+  gap: 1em;
 }
 
 .music-container a,
@@ -53,3 +53,15 @@
   align-items: center;
   margin: 0.5em auto;
 }
+
+.playAudio {
+  width: 50%;
+  height: 2em;
+  color: transparent;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--col-rd);
+  border-radius: .5em;  
+}
+
