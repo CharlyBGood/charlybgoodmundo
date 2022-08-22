@@ -10,7 +10,7 @@ function Content() {
           #&#119070;music
         </NavLink>
         <NavLink className="item item_2" to="/VisualArt">
-          #vi$ual_Art
+          #cRaZyCollaGe$
         </NavLink>
       </div>
       <NavLink to="/">

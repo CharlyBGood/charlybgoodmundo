@@ -1,6 +1,5 @@
 .main-container {
   width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,29 +14,37 @@
 
 .collage-h1 {
   text-align: center;
-  margin: 1 auto;
+  margin: 1em auto;
   margin-bottom: 0.5em;
 }
 
 .gy-container {
   margin: 0 auto;
-  display: -ms-grid;
+  /* display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 2em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(21vw, 1fr));
-  -ms-flex-pack: distribute;
+  -ms-flex-pack: distribute; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1em;
   width: 85%;
+  justify-content: center;
 }
 
 .gy-item {
-  border: 1px solid var(--col-rd);
+  width: 13vw;
+  /* border: 1px solid var(--col-rd); */
   border-radius: 0.4em;
   cursor: pointer;
 }
 
-.gy-container img {
-  width: 11em;
+.gy-container .gy-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.4em;
 }
 
 .main-container button {
@@ -59,5 +66,41 @@
 }
 
 .svg-inline--fa {
-  margin: 0 .5em;
+  margin: 0 0.5em;
+}
+
+#img-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  align-items: center;
+  
+}
+
+.modal-content {
+  margin: 7% auto;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  width: 80%;
+  height: 75%;
+  background-color: var(--blckBgr);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: .4em;
 }
