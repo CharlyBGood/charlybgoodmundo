@@ -1,20 +1,20 @@
 import "../stylesheets/VisualArt.css";
-// import Jahjah from "../img/img-jahjah.gif";
 
 function Image(props) {
   let imgModalOne;
+
   const openImg = () => {
-    imgModalOne = document.getElementById("img-modal");
+    imgModalOne = document.getElementsByClassName("img-modal")[0];
     console.log("click!");
     imgModalOne.style.display = "flex";
-    document.body.style.overflow = "hidden";
+    let imgNew = document.createElement("img");
+    imgModalOne.appendChild(imgNew);
+    imgNew.src = require(`../img/img-${props.img}.${props.ext}`);
+    imgNew.className = "modal-content new";
   };
-  window.onclick = function (ev) {
-    if (ev.target === imgModalOne) {
-      imgModalOne.style.display = "none";
-    }
+  const closeModal = () => {
+    console.log("Vale");
   };
-
   return (
     <>
       <div className="gy-item gy-item-1" onClick={openImg}>
@@ -24,13 +24,7 @@ function Image(props) {
           alt="digital art by Charly BGood"
         />
       </div>
-      <div id="img-modal">
-        <img
-          className="modal-content"
-          src={require(`../img/img-${props.img}.${props.ext}`)}
-          alt="digital art by Charly BGood"
-        />
-      </div>
+      <div className="img-modal" onClick={closeModal}></div>
     </>
   );
 }

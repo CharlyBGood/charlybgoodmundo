@@ -69,7 +69,7 @@
   margin: 0 0.5em;
 }
 
-#img-modal {
+.img-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -87,7 +87,6 @@
   animation-name: animatetop;
   animation-duration: 0.4s;
   align-items: center;
-  
 }
 
 .modal-content {
@@ -98,10 +97,25 @@
   background-color: var(--blckBgr);
 }
 
-.modal-content img {
-  width: 100%;
+img.modal-content {
+  width: 50%;
   height: auto;
-  border-radius: .4em;
+  border-radius: 0.4em;
+}
+
+.close {
+  color: wheat;
+  position: absolute;
+  top: 5em;
+  right: 5em;
+  font-size: 2em;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
