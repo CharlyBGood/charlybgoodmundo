@@ -1,5 +1,5 @@
 import "../stylesheets/Music.css";
-import GifImg from "../img/playrec.gif";
+import GifImg from "../img/img-playrec.gif";
 import ReactPlayer from "react-player";
 import audioFile from "../audio/maconia.wav";
 

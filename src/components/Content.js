@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ImgCenter from "../img/planetavacio.png";
+import ImgCenter from "../img/img-planetavacio.png";
 import "../stylesheets/Content.css";
 
 function Content() {
