@@ -1,13 +1,5 @@
 import "../stylesheets/VisualArt.css";
-// import Jahjah from "../img/img-jahjah.gif";
-// import colored from "../img/colored.png";
-// import damma from "../img/damma1.gif";
-// import corazono from "../img/corazono2.gif";
-// import girl from "../img/Girl.jpg";
-// import monster from "../img/elmonstruolunaysol.png";
 import Image from "../components/Image";
-
-// let imgModalOne;
 
 function VisualArt() {
   return (
@@ -19,15 +11,8 @@ function VisualArt() {
         <Image img="colored" ext="png" />
         <Image img="monstruo" ext="png" />
         <Image img="damma1" ext="gif" />
-        <Image img="girl" ext="jpg" />
+        <Image img="bitcoinfire" ext="gif" />
       </div>
-      {/* <div id="img-modal">
-        <img
-          className="modal-content"
-          src={Jahjah}
-          alt="handmade draw made a gif called moonman"
-        />
-      </div> */}
 
       <button>
         <a

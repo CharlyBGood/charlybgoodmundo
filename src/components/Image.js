@@ -1,19 +1,14 @@
 import "../stylesheets/VisualArt.css";
 
 function Image(props) {
-  let imgModalOne;
-
   const openImg = () => {
+    let imgModalOne;
     imgModalOne = document.getElementsByClassName("img-modal")[0];
-    console.log("click!");
     imgModalOne.style.display = "flex";
     let imgNew = document.createElement("img");
     imgModalOne.appendChild(imgNew);
     imgNew.src = require(`../img/img-${props.img}.${props.ext}`);
-    imgNew.className = "modal-content new";
-  };
-  const closeModal = () => {
-    console.log("Vale");
+    imgNew.className = "modal-content";
   };
   return (
     <>
@@ -24,7 +19,7 @@ function Image(props) {
           alt="digital art by Charly BGood"
         />
       </div>
-      <div className="img-modal" onClick={closeModal}></div>
+      <div className="img-modal"></div>
     </>
   );
 }

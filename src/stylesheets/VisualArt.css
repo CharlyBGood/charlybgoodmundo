@@ -98,12 +98,12 @@
 }
 
 img.modal-content {
-  width: 50%;
+  width: 35vw;
   height: auto;
   border-radius: 0.4em;
 }
 
-.close {
+/* .close {
   color: wheat;
   position: absolute;
   top: 5em;
@@ -116,10 +116,13 @@ img.modal-content {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 650px) {
   .gy-item {
     width: 25%;
+  }
+  img.modal-content {
+    width: 50%;
   }
 }
