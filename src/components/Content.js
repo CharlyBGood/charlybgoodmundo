@@ -13,14 +13,14 @@ function Content() {
           #cRaZyCollaGe$
         </NavLink>
       </div>
-      <NavLink to="/">
+      
         <img
           className="img"
           id="header-img"
           src={ImgCenter}
           alt="Charly BGood Logo"
         />
-      </NavLink>
+      
       <div className="decoration_words">
         <NavLink className="item item_1" to="/DevPortfolio">
           #dev_Portfolio

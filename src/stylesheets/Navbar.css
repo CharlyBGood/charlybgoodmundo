@@ -18,6 +18,7 @@
 .header-logo {
   border-radius: 3em;
   padding: 0.4em;
+  margin-left: 2em;
 }
 .nav-link_1 {
   display: flex;

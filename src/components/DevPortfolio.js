@@ -1,44 +1,46 @@
 import "../stylesheets/DevPortfolio.css";
+import { NavLink } from "react-router-dom";
+import ImgComputer from "../img/img-computer.png";
 
 function DevPortfolio() {
   return (
-    <main className="projects-container">
-      <div className="card-container">
-        <div className="card card-1">
-          <a href="/" rel="noreferrer" target="_blank">
-            Some personal projects
-          </a>
-        </div>
-        <div className="card card-2">
-          <a
-            href="https://estarsiempreseguros.com.ar/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Client WebSite
-          </a>
-        </div>
-        <div className="card card-3">
-          <a href="/" rel="noreferrer" target="_blank">
-            Web Apps
-          </a>
-        </div>
-        <div className="card card-4">
-          <a href="/" rel="noreferrer" target="_blank">
-            Single Pages
-          </a>
-        </div>
-        <div className="card card-5">
-          <a
-            href="https://charlybgood.github.io/freecodecamp/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            FreeCodeCamp Web Design Projects
-          </a>
-        </div>
+    <div className="img_container">
+      <div className="decoration_words">
+        <a
+          className="item item_1"
+          href="/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          #webApps
+        </a>
+        <NavLink className="item item_2" to="/">
+          #reactProjects
+        </NavLink>
+
+        <img
+          className="img_center item_3"
+          src={ImgComputer}
+          alt="Charly BGood Logo"
+        />
+        <a
+          className="item item_2"
+          href="https://estarsiempreseguros.com.ar/"
+          target="_BLANK"
+          rel="noopener noreferrer"
+        >
+          #clientWebsite
+        </a>
+        <a
+          className="item item_1"
+          href="https://charlybgood.github.io/freecodecamp/"
+          target="_BLANK"
+          rel="noopener noreferrer"
+        >
+          #freeCodeCamp
+        </a>
       </div>
-    </main>
+    </div>
   );
 }
 
