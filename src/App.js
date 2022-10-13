@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Music from "./components/Music";
 import VisualArt from "./components/VisualArt";
 import DevPortfolio from "./components/DevPortfolio";
+import SinglePages from "./components/SinglePages";
+import WebApps from "./components/WebApps";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             element={<VisualArt />}
           />
           <Route path="/DevPortfolio" element={<DevPortfolio />} />
+          <Route path="/DevPortfolio/SinglePages" element={<SinglePages />} />
+          <Route path="/DevPortfolio/WebApps" element={<WebApps />} />
         </Routes>
         <Footer />
       </BrowserRouter>

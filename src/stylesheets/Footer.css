@@ -1,7 +1,7 @@
 footer {
   background-color: var(--col-rd);
   opacity: 0.9;
-  padding: 0.6em;
+  /* padding: 0.6em; */
   margin: 0;
   bottom: 0;
   position: fixed;
@@ -23,7 +23,7 @@ footer {
 
 .smedia a {
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: .3em;
   text-decoration: none;
   color: var(--col-whp);
 }

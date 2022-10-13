@@ -1,0 +1,36 @@
+.p_description {
+  text-align: center;
+  padding: 0 1em;
+  width: 65%;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  margin: 0 auto;
+  -webkit-animation: bigpre 11s infinite alternate;
+  animation: bigpre 11s infinite alternate;
+}
+
+button.btn-back {
+  margin: 1em auto;
+  background-color: var(--col-rd);
+  color: var(--col-wrd);
+  height: 3em;
+  border: none;
+  border-radius: 0.5em;
+  transition: 0.7s;
+}
+
+button.btn-back:active {
+  box-shadow: 1px 1px 1px var(--col-whr);
+}
+
+button.btn-back a {
+  color: var(--col-whr);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .p_description {
+    width: 95%;
+  }
+}
