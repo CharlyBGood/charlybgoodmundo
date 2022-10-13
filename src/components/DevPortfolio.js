@@ -1,43 +1,29 @@
 import "../stylesheets/DevPortfolio.css";
+import "../stylesheets/Content.css"
 import { NavLink } from "react-router-dom";
-import ImgComputer from "../img/img-computer.png";
+import ImgCenter from "../img/img-planetavacio.png";
 
 function DevPortfolio() {
   return (
-    <div className="img_container">
+    <div className="img_container">      
       <div className="decoration_words">
-        <a
-          className="item item_1"
-          href="https://charlybgood.github.io/webAppsJS/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          #JSwebApps
-        </a>
+        <NavLink className="item item_1" to="./WebApps">
+          #funJsApps
+        </NavLink>
         <NavLink className="item item_2" to="/">
           #reactProjects
         </NavLink>
-
-        <img
-          className="img_center item_3"
-          src={ImgComputer}
-          alt="Charly BGood Logo"
-        />
+        <img className="img" src={ImgCenter} alt="Charly BGood Logo" />
+        <NavLink className="item item_1" to="./SinglePages">
+          #mockUpWebDesign
+        </NavLink>
         <a
           className="item item_2"
           href="https://estarsiempreseguros.com.ar/"
           target="_BLANK"
           rel="noopener noreferrer"
         >
-          #clientWebsite
-        </a>
-        <a
-          className="item item_1"
-          href="https://charlybgood.github.io/freecodecamp/"
-          target="_BLANK"
-          rel="noopener noreferrer"
-        >
-          #freeCodeCamp
+          #companyWebsite
         </a>
       </div>
     </div>

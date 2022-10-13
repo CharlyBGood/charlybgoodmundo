@@ -25,7 +25,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 1em;
+  gap: 2em;
   width: 80%;
 }
 
@@ -121,11 +121,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 2em;
     margin: 1em auto;
   }
 
   .decoration_words .item {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }

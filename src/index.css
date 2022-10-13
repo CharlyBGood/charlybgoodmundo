@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Nanum Gothic", sans-serif;
+  background-image: url("./img/img-computer.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
