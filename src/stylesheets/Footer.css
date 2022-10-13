@@ -28,6 +28,7 @@ footer {
   color: var(--col-whp);
 }
 
+
 @media screen and (max-width: 800px) {
   footer {
     padding: .6em .2em;

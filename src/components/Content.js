@@ -9,30 +9,22 @@ function Content() {
         <NavLink className="item item_1" to="./Music">
           #&#119070;music
         </NavLink>
-        <NavLink className="item item_2" to="/VisualArt">
-          #cRaZyCollaGe$
-        </NavLink>
-      </div>
-      
-        <img
-          className="img"
-          id="header-img"
-          src={ImgCenter}
-          alt="Charly BGood Logo"
-        />
-      
-      <div className="decoration_words">
-        <NavLink className="item item_1" to="/DevPortfolio">
+        <NavLink className="item item_2" to="/DevPortfolio">
           #dev_Portfolio
         </NavLink>
-        <a
-          className="item item_2"
-          href="https://opensea.io/charly_bgood"
-          target="_BLANK"
-          rel="noopener noreferrer"
-        >
-          #nft
-        </a>
+      </div>
+
+      <img
+        className="img"
+        id="header-img"
+        src={ImgCenter}
+        alt="Charly BGood Logo"
+      />
+
+      <div className="decoration_words">
+        <NavLink className="item item_3" to="/VisualArt">
+          #CollaGe$
+        </NavLink>
       </div>
     </div>
   );

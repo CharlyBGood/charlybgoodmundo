@@ -8,11 +8,11 @@ function DevPortfolio() {
       <div className="decoration_words">
         <a
           className="item item_1"
-          href="/"
+          href="https://charlybgood.github.io/webAppsJS/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          #webApps
+          #JSwebApps
         </a>
         <NavLink className="item item_2" to="/">
           #reactProjects
