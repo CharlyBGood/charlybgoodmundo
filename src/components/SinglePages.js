@@ -9,7 +9,6 @@ function SinglePages() {
         Some 'almost static' sites as a practice on Web Design skills and
         originallity. <code>Html/Css/Js</code>
       </p>
-
       <div className="img_container">
         <div className="decoration_words">
           <a
@@ -55,7 +54,7 @@ function SinglePages() {
         </div>
       </div>
       <button className="btn-back">
-        <NavLink to="/DevPortfolio">&#129092;DevPortfolio!</NavLink>
+        <NavLink to="/DevPortfolio">&#129092; back</NavLink>
       </button>
     </>
   );
