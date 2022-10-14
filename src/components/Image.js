@@ -2,13 +2,26 @@ import "../stylesheets/VisualArt.css";
 
 function Image(props) {
   const openImg = () => {
-    let imgModalOne;
-    imgModalOne = document.getElementsByClassName("img-modal")[0];
+    let imgModalOne = document.getElementsByClassName("img-modal")[0];
+    let imgBase = document.getElementsByClassName("gy-img")[0];
     imgModalOne.style.display = "flex";
-    let imgNew = document.createElement("img");
-    imgModalOne.appendChild(imgNew);
-    imgNew.src = require(`../img/img-${props.img}.${props.ext}`);
-    imgNew.className = "modal-content";
+    imgBase.classList.add("open");
+    
+    if (imgBase.classList.contains("open")) {
+      let imgNew = document.createElement("img");
+      imgModalOne.appendChild(imgNew);
+      imgNew.src = require(`../img/img-${props.img}.${props.ext}`);
+      imgNew.className = "modal-content";
+    }
+  };
+
+  const closeImg = (e) => {
+    let imgModalOne = document.getElementsByClassName("img-modal")[0];
+    let imgBase = document.getElementsByClassName("gy-img")[0];
+    let imgNew = document.getElementsByClassName("modal-content")
+    imgModalOne.style.display = "none";
+    imgBase.classList.remove("open");
+    imgModalOne.remove(imgNew);
   };
   return (
     <>
@@ -19,7 +32,7 @@ function Image(props) {
           alt="digital art by Charly BGood"
         />
       </div>
-      <div className="img-modal"></div>
+      <div className="img-modal" onClick={closeImg}></div>
     </>
   );
 }

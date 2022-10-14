@@ -90,15 +90,14 @@
 }
 
 .modal-content {
-  margin: 7% auto;
-  padding: 0.3em;
+  margin: 7% auto;  
   border-radius: 0.5em;
   width: 80%;
   background-color: var(--blckBgr);
 }
 
 img.modal-content {
-  width: 35vw;
+  width: 25%;
   height: auto;
   border-radius: 0.4em;
 }
@@ -123,6 +122,6 @@ img.modal-content {
     width: 25%;
   }
   img.modal-content {
-    width: 50%;
+    width: 75%;
   }
 }
