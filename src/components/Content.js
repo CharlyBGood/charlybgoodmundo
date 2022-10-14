@@ -7,10 +7,10 @@ function Content() {
     <div className="img_container">
       <div className="decoration_words">
         <NavLink className="item item_1" to="./Music">
-          #&#119070;music
+          #&#119070;Mu$ic
         </NavLink>
         <NavLink className="item item_2" to="/DevPortfolio">
-          #dev_Portfolio
+          #dEv_PoRtfoLio
         </NavLink>
       </div>
 
@@ -23,7 +23,7 @@ function Content() {
 
       <div className="decoration_words">
         <NavLink className="item item_3" to="/VisualArt">
-          #CollaGe$
+          #Vi$uAls
         </NavLink>
       </div>
     </div>
