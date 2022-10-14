@@ -14,7 +14,7 @@ function DevPortfolio() {
           #reactProjects
         </NavLink>
         <img className="img" src={ImgCenter} alt="Charly BGood Logo" />
-        <NavLink className="item item_3" to="./SinglePages">
+        <NavLink className="item item_1" to="./SinglePages">
           #webDesign
         </NavLink>
       </div>
