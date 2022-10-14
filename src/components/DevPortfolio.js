@@ -14,17 +14,17 @@ function DevPortfolio() {
           #reactProjects
         </NavLink>
         <img className="img" src={ImgCenter} alt="Charly BGood Logo" />
-        <NavLink className="item item_1" to="./SinglePages">
-          #mockUpWebDesign
+        <NavLink className="item item_3" to="./SinglePages">
+          #webDesign
         </NavLink>
-        <a
+        {/* <a
           className="item item_2"
           href="https://estarsiempreseguros.com.ar/"
           target="_BLANK"
           rel="noopener noreferrer"
         >
           #companyWebsite
-        </a>
+        </a> */}
       </div>
     </div>
   );
