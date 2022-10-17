@@ -7,7 +7,7 @@ function Content() {
     <div className="img_container">
       <div className="decoration_words">
         <NavLink className="item item_1" to="./Music">
-          #&#119070;music
+          #&#119070;m_s↑c♠
         </NavLink>
         <NavLink className="item item_2" to="/DevPortfolio">
           #dev_Portfolio

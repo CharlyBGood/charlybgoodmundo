@@ -3,7 +3,7 @@
 :root {
   color-scheme: light only;
   --fs-600: 2rem;
-  --fs-500: 1.35rem;
+  --fs-500: 1.1rem;
   --fs-400: 1rem;
   --col-whr: #e2e1e1;
   --col-whp: #f7e4f2;
@@ -30,7 +30,7 @@ body {
 }
 
 .App {
-  background-color: rgba(15, 2, 27, 0.96);
+  background-color: rgba(14, 2, 26, 0.81);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
