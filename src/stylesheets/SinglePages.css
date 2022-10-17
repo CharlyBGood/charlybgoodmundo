@@ -5,8 +5,7 @@
   line-height: 1.5em;
   letter-spacing: 0.2em;
   font-size: 0.9em;
-  margin: 0 auto;
-  -webkit-animation: bigpre 11s infinite alternate;
+  margin: 2em auto;
   animation: bigpre 11s infinite alternate;
 }
 
@@ -32,7 +31,7 @@ button.btn-back a {
   margin: 0 auto;
   width: 100%;
   padding: 0.7em;
-  letter-spacing: .3em;
+  letter-spacing: 0.3em;
 }
 
 @media screen and (max-width: 800px) {

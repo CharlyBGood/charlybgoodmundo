@@ -15,16 +15,8 @@ function DevPortfolio() {
         </NavLink>
         <img className="img" src={ImgCenter} alt="Charly BGood Logo" />
         <NavLink className="item item_1" to="./SinglePages">
-          #mockUpWebDesign
+          #webDesign
         </NavLink>
-        <a
-          className="item item_2"
-          href="https://estarsiempreseguros.com.ar/"
-          target="_BLANK"
-          rel="noopener noreferrer"
-        >
-          #companyWebsite
-        </a>
       </div>
     </div>
   );

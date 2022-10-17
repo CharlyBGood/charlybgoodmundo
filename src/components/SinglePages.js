@@ -12,6 +12,14 @@ function SinglePages() {
       <div className="img_container">
         <div className="decoration_words">
           <a
+            className="item item_3"
+            href="https://estarsiempreseguros.com.ar/"
+            target="_BLANK"
+            rel="noopener noreferrer"
+          >
+            #companySite
+          </a>
+          <a
             className="item item_2"
             href="https://charlybgood.github.io/freecodecamp/webdesign/2-surveyform/index.html"
             rel="noopener noreferrer"
