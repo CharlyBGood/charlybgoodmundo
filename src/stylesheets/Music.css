@@ -1,18 +1,4 @@
-.video_gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-}
-
-.music-container {
+.player {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,42 +12,303 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 7em auto;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  text-align: center;
   gap: 1em;
 }
 
-.music-container a,
-.music-container img {
+.player .gif {
+  max-width: 75%;
+  margin: 1em auto;
+  border-radius: 0.5rem;
   background-color: #212121;
-  color: var(--col-whr);
-  padding: 0.7em;
-  border-radius: 0.7em;
-  text-decoration: none;
+  padding: 1em;
 }
 
-.gif {
-  width: 50%;
-}
-
-.links {
+.player_one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 85%;
+}
+
+#controls {
+  width: 85%;
+  padding: 1.4em;
+}
+
+.controls_wrapper {
+  margin: 0.5em;
+  /* border: 1px solid #212121; */
+  /* -webkit-box-shadow: 1px 3px 1px #212121; */
+  /* box-shadow: 1px 3px 1px #212121; */
+  border-radius: 0.7em;
+  -webkit-box-shadow: 1px 2px var(--col-rd);
+  box-shadow: 1px 2px var(--col-rd);
+  border-radius: 0.5em;
+  /* padding: 0.6em; */
+  height: 27vh;
+}
+
+.controls_wrapper button {
+  /* font-size: var(--fs-500);   */
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  color: var(--col-whp);
+  padding: 0.4em;
+  margin: 0.3em;
+  border-radius: 0.5em;
+  background-color: #212121;
+  -webkit-box-shadow: 1px 1px 1px #653e78;
+  box-shadow: 1px 1px 1px #99939c;
+  outline: none;
+  border: none;
+}
+
+.controls_wrapper button:active {
+  -webkit-box-shadow: 2px 2px 2px #212121;
+  box-shadow: 2px 2px 2px #212121;
+  padding-right: 0.7em;
+}
+
+button.playBtn {
+  background-color: var(--col-rd);
+}
+
+button.playBtn:active {
+  background-color: transparent;
+}
+
+.volume-onOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-onOff p {
+  background-color: #212121;
+  padding: 0.7em;
+  border-radius: 0.5em;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0.5em auto;
+  /* width: 100%; */
+  border-radius: 0.7em;
+  box-shadow: 1px 2px var(--col-rd);
 }
 
-.playAudio {
-  width: 50%;
-  height: 2em;
-  color: transparent;
+.progress_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1em auto;
 }
 
-audio::-webkit-media-controls-panel {
+.progress-container {
+  margin: 0.3em 0;
+  height: 1.5em;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+.progress {
   background-color: var(--col-rd);
-  border-radius: .5em;  
+  border-radius: 0.2em;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
 
+.progress_section p {
+  font-size: 0.9em;
+  letter-spacing: normal;
+  margin: 0 0.5em;
+}
+
+/* volume slider styles */
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.volume span {
+  font-size: 1.4em;
+  background-color: #212121;
+  padding: 0 0.2em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.volume span:active {
+  -webkit-box-shadow: 2px 2px 2px #212121;
+  box-shadow: 2px 2px 2px #212121;
+  padding-right: 0.3em;
+}
+
+.slider-vol-container {
+  width: 100%;
+  height: 1em;
+  border-bottom: 1px solid var(--col-whp);
+  cursor: pointer;
+}
+
+.volume-slider {
+  width: 50%;
+  height: 0.9em;
+  background-color: var(--col-rd);
+}
+
+#volumeSlider {
+  cursor: pointer;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    width: 50%;
+    height: 1em;
+    border-radius: 0.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--col-whr);
+    margin: 0.7em 0;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    color: var(--col-rd);
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 1em;
+    background: #0c0c0c;
+    -webkit-box-shadow: -8em 0 0 8em var(--col-rd);
+    box-shadow: -8em 0 0 8em var(--col-rd);
+  }
+}
+
+/* volume slider styles */
+
+#currentSong {
+  text-align: center;
+  font-size: var(--fs-400);
+  overflow: hidden;
+}
+
+#songList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1em;
+  border-radius: 0.7em;
+  box-shadow: 1px 2px var(--col-rd);
+}
+
+#songList div {
+  /* width: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#songList button {
+  cursor: pointer;
+  padding: 0.4em;
+  font-size: var(--fs-500);
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0.5em auto;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 1px 1px 1px #212121;
+  box-shadow: 1px 1px 1px #212121;
+  background-color: rgba(14, 2, 26, 0.41);
+  color: var(--col-whr);
+  outline: none;
+  width: 65%;
+}
+
+#songList button:hover {
+  background: var(--col-rd);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+  .player {
+    width: 100%;
+    height: auto;
+  }
+  .player_one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin: 21% auto;
+  }
+
+  #controls {
+    width: 100%;
+  }
+
+  .controls_wrapper {
+    height: 32vh;
+  }
+
+  .progress-container {
+    margin: 1em auto;
+  }
+
+  .controls_wrapper button {
+    margin: 0.3em 0.7em;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
