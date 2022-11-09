@@ -9,6 +9,7 @@ import VisualArt from "./components/VisualArt";
 import DevPortfolio from "./components/DevPortfolio";
 import SinglePages from "./components/SinglePages";
 import WebApps from "./components/WebApps";
+import ReactProjects from "./components/ReactProjects";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/DevPortfolio" element={<DevPortfolio />} />
           <Route path="/DevPortfolio/SinglePages" element={<SinglePages />} />
           <Route path="/DevPortfolio/WebApps" element={<WebApps />} />
+          <Route path="/DevPortfolio/ReactProjects" element={<ReactProjects />} />
         </Routes>
         <Footer />
       </BrowserRouter>

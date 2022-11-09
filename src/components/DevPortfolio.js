@@ -10,7 +10,7 @@ function DevPortfolio() {
         <NavLink className="item item_1" to="./WebApps">
           #funJsApps
         </NavLink>
-        <NavLink className="item item_2" to="/">
+        <NavLink className="item item_2" to="./ReactProjects">
           #reactProjects
         </NavLink>
         <img className="img" src={ImgCenter} alt="Charly BGood Logo" />
