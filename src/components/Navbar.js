@@ -5,7 +5,7 @@ import Logo from "../img/img-headerlogo.png";
 function Navbar() {
   return (
     <nav className="topnav" id="nav-bar">
-      <NavLink className="nav-link_1" to="/" exact>
+      <NavLink className="nav-link_1" to="/">
         <img className="header-logo" src={Logo} alt="charly bgood logo" />
       </NavLink>
       <NavLink className="nav-link_2" to="/Contact">
