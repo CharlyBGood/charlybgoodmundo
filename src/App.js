@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -15,24 +15,19 @@ import PageNotFound from "./components/PageNotFound";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Content />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Music" element={<Music />} />
-          <Route
-            path="/VisualArt"
-            element={<VisualArt />}
-          />
-          <Route path="/DevPortfolio" element={<DevPortfolio />} />
-          <Route path="/DevPortfolio/SinglePages" element={<SinglePages />} />
-          <Route path="/DevPortfolio/WebApps" element={<WebApps />} />
-          <Route path="/DevPortfolio/ReactProjects" element={<ReactProjects />} />
-          <Route path="/*" element={<PageNotFound />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Content />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Music" element={<Music />} />
+        <Route path="/VisualArt" element={<VisualArt />} />
+        <Route path="/DevPortfolio" element={<DevPortfolio />} />
+        <Route path="/DevPortfolio/SinglePages" element={<SinglePages />} />
+        <Route path="/DevPortfolio/WebApps" element={<WebApps />} />
+        <Route path="/DevPortfolio/ReactProjects" element={<ReactProjects />} />
+        <Route path="/*" element={<PageNotFound />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
