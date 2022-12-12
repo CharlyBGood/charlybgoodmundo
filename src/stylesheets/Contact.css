@@ -1,6 +1,9 @@
 .main-form {
   display: flex;
-  width: 100%;
+  width: 60%;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
@@ -14,40 +17,93 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 85%;
-  margin: 0 auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   opacity: 0.9;
-  border-radius: 1em;
-  padding: 1em;
-  color: var(--col-whr);
-  font-size: 1em;
+  flex: 2;
+  letter-spacing: 0.2em;
 }
 
 form input,
 textarea {
   background-color: var(--col-rd);
   color: var(--col-whp);
-  margin: 0.5em;
+  margin: 0.5em 0;
   padding: 0.5em;
-  width: 50%;
+  width: 85%;
   height: auto;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   border: none;
+  letter-spacing: 0.2em;
 }
 
-.form-container input[type="submit"] {
-  color: var(--col-whr);
-  height: 3em;
-  font-size: 1.1em;
+.form-container button {
+  background-color: var(--col-rd);
+  border: none;
+  color: #f7e4f2be;
+  font-size: var(--fs-400);
+  width: 85%;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  letter-spacing: 0.4em;
+  opacity: 0.9;
   cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #f7e4f2be;
+  color: var(--col-rd);
+}
+
+.form-container button:active {
+  background-color: var(--col-whp);
+  color: var(--col-rd);
+  transition: 1s;
+  letter-spacing: 1em;
+}
+
+.smedia-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  gap: 1.3em;
+}
+
+.smedia-contact a {
+  text-decoration: none;
+  color: var(--col-whp);
+  font-size: var(--fs-600);
+  opacity: 0.6;
+}
+
+.smedia-contact a:hover {
+  color: var(--col-rd);
 }
 
 @media screen and (max-width: 800px) {
   form input,
   textarea {
     width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .form-container button {
+    width: 100%;
+  }
+
+  .main-form {
+    width: 85%;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .smedia-contact {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
   }
 }

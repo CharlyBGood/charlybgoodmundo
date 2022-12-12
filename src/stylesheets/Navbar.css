@@ -31,4 +31,14 @@
   text-align: right;
   color: var(--col-whr);
   text-decoration: none;
+  letter-spacing: .3em;
+}
+
+.nav-link_2:hover {
+  letter-spacing: .5em;
+  transition: 1s;
+}
+
+.nav-link_2:active {
+  letter-spacing: 1em;
 }

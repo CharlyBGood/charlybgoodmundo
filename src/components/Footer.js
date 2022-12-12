@@ -1,33 +1,13 @@
 import React from "react";
 import "../stylesheets/Footer.css";
-import {
-  FaGithub,
-  FaYoutube,
-  FaInstagram,
-  FaTwitter,
-  FaVimeo,
-} from "react-icons/fa";
+import { FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="smedia">
+      <a href="#!">Charly BGood</a>
       <a href="https://github.com/CharlyBGood" target="_blank" rel="noreferrer">
-        {/* <i className="fa-brands fa-github"></i> */}
         <FaGithub />
-      </a>
-      <a href="https://bit.ly/BGoodYouTube" target="_blank" rel="noreferrer">
-        {/* <i className="fab fa-youtube"></i> */}
-        <FaYoutube />
-      </a>
-      <a href="https://vimeo.com/charlybgood" target="_blank" rel="noreferrer">
-        <FaVimeo />
-      </a>
-      <a
-        href="https://www.instagram.com/charlsbgood/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaInstagram />
       </a>
       <a
         href="https://twitter.com/CharlybGoodM"
@@ -35,6 +15,9 @@ function Footer() {
         rel="noreferrer"
       >
         <FaTwitter />
+      </a>
+      <a href="https://bit.ly/BGoodYouTube" target="_blank" rel="noreferrer">
+        <FaYoutube />
       </a>
     </footer>
   );
