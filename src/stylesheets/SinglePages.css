@@ -11,27 +11,48 @@
 
 button.btn-back {
   margin: 1em auto;
-  background-color: var(--col-rd);
-  color: var(--col-wrd);
+  /* background-color: var(--col-rd); */
+  background-color: transparent;
+  color: var(--col-whr);
   border: none;
   border-radius: 0.5em;
   padding: 0;
   transition: 0.7s;
+  box-shadow: 4px 1px var(--col-rd);
+  -webkit-animation: narrow 11s infinite alternate;
+  animation: bigpre 11s infinite alternate;
 }
 
-button.btn-back:active {
-  box-shadow: 1px 1px 1px var(--col-whr);
+button.btn-back svg:hover {
+  box-shadow: 2px 1px var(--col-whr);
+  background-color: var(--col-whr);
+  color: var(--col-rd);
+  font-size: 2.5em;
+  transition: 1s;
 }
 
-button.btn-back a {
+button.btn-back svg {
   display: block;
   color: var(--col-whr);
   text-decoration: none;
-  height: 100%;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0.7em;
-  letter-spacing: 0.3em;
+  font-size: 2em;
+  border-radius: 33em;
+}
+
+@-webkit-keyframes narrow {
+  50% {
+    font-size: 2.5em;
+    color: var(--col-rd);
+    text-shadow: -4px -1px var(--col-whr);
+  }
+}
+
+@keyframes narrow {
+  50% {
+    font-size: 2.5em;
+    color: var(--col-rd);
+    text-shadow: -4px -1px var(--col-whr);
+  }
 }
 
 @media screen and (max-width: 800px) {

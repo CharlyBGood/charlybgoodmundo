@@ -5,7 +5,7 @@ import { FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="smedia">
-      <a href="#!">Charly BGood</a>
+      <i href="#!">Charly BGood</i>
       <a href="https://github.com/CharlyBGood" target="_blank" rel="noreferrer">
         <FaGithub />
       </a>

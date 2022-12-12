@@ -1,5 +1,6 @@
 import "../stylesheets/SinglePages.css";
 import { NavLink } from "react-router-dom";
+import { FaArrowCircleLeft } from "react-icons/fa";
 
 function ReactProjects() {
   return (
@@ -37,7 +38,9 @@ function ReactProjects() {
       </div>
 
       <button className="btn-back">
-        <NavLink to="/DevPortfolio">&#129092; back</NavLink>
+        <NavLink to="/DevPortfolio">
+          <FaArrowCircleLeft />
+        </NavLink>
       </button>
     </>
   );

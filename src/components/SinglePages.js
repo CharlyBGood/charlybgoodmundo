@@ -1,13 +1,13 @@
 import "../stylesheets/SinglePages.css";
 import { NavLink } from "react-router-dom";
+import { FaArrowCircleLeft } from "react-icons/fa";
 // import ImgComputer from "../img/img-computer.png";
 
 function SinglePages() {
   return (
     <>
       <p className="p_description">
-        Web Design static pages
-        using <code>Html/Css/Js</code>
+        Web Design static pages using <code>Html/Css/Js</code>
       </p>
       <div className="img_container">
         <div className="decoration_words">
@@ -62,7 +62,9 @@ function SinglePages() {
         </div>
       </div>
       <button className="btn-back">
-        <NavLink to="/DevPortfolio">&#129092; back</NavLink>
+        <NavLink to="/DevPortfolio">
+          <FaArrowCircleLeft />
+        </NavLink>
       </button>
     </>
   );

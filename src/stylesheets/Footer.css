@@ -17,9 +17,11 @@ footer {
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
-.smedia a {
+.smedia a,
+.smedia i {
   letter-spacing: 0.2em;
   text-align: center;
   font-size: var(--fs-400);
@@ -38,7 +40,8 @@ footer {
     padding: 0.6em 0.2em;
   }
 
-  .smedia a {
+  .smedia i {
+    font-size: 0.9em;
     padding: 0 0.5em;
   }
 }
