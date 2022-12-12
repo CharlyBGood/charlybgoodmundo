@@ -6,8 +6,8 @@ function SinglePages() {
   return (
     <>
       <p className="p_description">
-        Some 'almost static' sites as a practice on Web Design skills and
-        originallity. <code>Html/Css/Js</code>
+        Web Design static pages
+        using <code>Html/Css/Js</code>
       </p>
       <div className="img_container">
         <div className="decoration_words">

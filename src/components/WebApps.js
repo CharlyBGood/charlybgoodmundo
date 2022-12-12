@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 function WebApps() {
   return (
     <>
-    <p className="p_description">
-        Fun web apps and projects made in pure <code>Vanilla Javascript</code>.
+      <p className="p_description">
+        Fun web apps made in pure <code>Vanilla Javascript</code>.
       </p>
       <div className="img_container">
         <div className="decoration_words">
