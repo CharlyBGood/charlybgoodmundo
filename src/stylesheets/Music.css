@@ -49,8 +49,6 @@
   /* -webkit-box-shadow: 1px 3px 1px #212121; */
   /* box-shadow: 1px 3px 1px #212121; */
   border-radius: 0.7em;
-  -webkit-box-shadow: 1px 2px var(--col-rd);
-  box-shadow: 1px 2px var(--col-rd);
   border-radius: 0.5em;
   /* padding: 0.6em; */
   height: 27vh;
@@ -111,7 +109,6 @@ button.playBtn:active {
   align-items: center;
   /* width: 100%; */
   border-radius: 0.7em;
-  box-shadow: 1px 2px var(--col-rd);
 }
 
 .progress_section {
@@ -237,21 +234,7 @@ button.playBtn:active {
   justify-content: center;
   gap: 1em;
   border-radius: 0.7em;
-  box-shadow: 1px 2px var(--col-rd);
-}
-
-#songList div {
-  /* width: 100%; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 1em;
-  padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 3em;
 }
 
 #songList button {
@@ -278,8 +261,8 @@ button.playBtn:active {
 
 @media (max-width: 800px) {
   .player {
+    display: block;
     width: 100%;
-    height: auto;
   }
   .player_one {
     -webkit-box-orient: vertical;
