@@ -1,40 +1,39 @@
+import { useState } from "react";
 import "../stylesheets/VisualArt.css";
 
-function Image(props) {
-  const openImg = () => {
-    let imgModalOne = document.getElementsByClassName("img-modal")[0];
-    let imgBase = document.getElementsByClassName("gy-img")[0];
-    imgModalOne.style.display = "flex";
-    imgBase.classList.add("open");
-    
-    if (imgBase.classList.contains("open")) {
-      let imgNew = document.createElement("img");
-      imgModalOne.appendChild(imgNew);
-      imgNew.src = require(`../img/img-${props.img}.${props.ext}`);
-      imgNew.className = "modal-content";
-    }
+export function Image({ title, ext }) {
+  const [imageSrc, setImageSrc] = useState();
+  const [isHidden, setIsHidden] = useState(true);
+
+  const openImg = (e) => {
+    setImageSrc(e.target.src);
+    setIsHidden(!isHidden);
+    console.log(imageSrc);
   };
 
   const closeImg = (e) => {
-    let imgModalOne = document.getElementsByClassName("img-modal")[0];
-    let imgBase = document.getElementsByClassName("gy-img")[0];
-    let imgNew = document.getElementsByClassName("modal-content")
-    imgModalOne.style.display = "none";
-    imgBase.classList.remove("open");
-    imgModalOne.remove(imgNew);
+    setIsHidden(!isHidden);
+    console.log("closeImg");
   };
   return (
     <>
       <div className="gy-item gy-item-1" onClick={openImg}>
         <img
           className="gy-img"
-          src={require(`../img/img-${props.img}.${props.ext}`)}
+          src={require(`../img/img-${title}.${ext}`)}
           alt="digital art by Charly BGood"
         />
       </div>
-      <div className="img-modal" onClick={closeImg}></div>
+      <div
+        className={isHidden ? "img-modal" : "img-modal-open"}
+        onClick={closeImg}
+      >
+        <img
+          className="modal-content"
+          src={require(`../img/img-${title}.${ext}`)}
+          alt="digital art by Charly BGood"
+        />
+      </div>
     </>
   );
 }
-
-export default Image;

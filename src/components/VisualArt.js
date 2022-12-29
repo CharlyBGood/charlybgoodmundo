@@ -1,17 +1,17 @@
 import "../stylesheets/VisualArt.css";
-import Image from "../components/Image";
+import { Image } from "../components/Image";
 
 function VisualArt() {
   return (
     <div className="main-container">
       <h1 className="collage-h1">cRaZy CollaGe World</h1>
       <div className="gy-container">
-        <Image img="jahjah" ext="gif" />
-        <Image img="corazono2" ext="gif" />
-        <Image img="colored" ext="png" />
-        <Image img="monstruo" ext="png" />
-        <Image img="damma1" ext="gif" />
-        <Image img="bitcoinfire" ext="gif" />
+        <Image title="jahjah" ext="gif" />
+        <Image title="corazono2" ext="gif" />
+        <Image title="colored" ext="png" />
+        <Image title="monstruo" ext="png" />
+        <Image title="damma1" ext="gif" />
+        <Image title="bitcoinfire" ext="gif" />
       </div>
 
       <button>
