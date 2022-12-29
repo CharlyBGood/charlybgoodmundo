@@ -9,6 +9,7 @@
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: center;
+  user-select: none;
   /* gap: 1em; */
 }
 
