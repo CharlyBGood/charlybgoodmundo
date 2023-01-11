@@ -27,6 +27,7 @@
   align-items: flex-start;
   gap: 1em;
   width: 80%;
+  z-index: 2;
 }
 
 .img {
@@ -35,6 +36,7 @@
   -webkit-animation: spin 3s linear infinite;
   animation: spin 11s linear infinite;
   opacity: 11;
+  z-index: 1;
 }
 
 @keyframes spin {
